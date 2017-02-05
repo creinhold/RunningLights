@@ -29,16 +29,14 @@ int blueLevel = 0;
 
 void loop() {
 
-  for(int x = 0; x <= numLED; x++)
+  for(int x = 0; x <= totalLED; x++)
   {
-      strip.setPixelColor(totalLED -1 - x, greenLevel, redLevel, blueLevel);
       strip.setPixelColor(x, greenLevel, redLevel, blueLevel);
       strip.show();                    
       delay(30);
   }
-  for(int x = 0; x <= numLED; x++)
+  for(int x = 0; x <= totalLED; x++)
   {
-      strip.setPixelColor(totalLED -1 - x, 0, 0, 0);
       strip.setPixelColor(x, 0, 0, 0);
       strip.show();                     
       delay(30);                        
