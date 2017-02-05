@@ -22,8 +22,8 @@ void setup() {
 
 int numLED = 30;
 int totalLED = 60;
-int redLevel = 255;
-int greenLevel = 0;
+int redLevel = 0;
+int greenLevel = 255;
 int blueLevel = 255;
 int lightDelay = 100;
 int barLength = 5; 
