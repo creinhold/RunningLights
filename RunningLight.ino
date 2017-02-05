@@ -32,7 +32,7 @@ int barLength = 5;
 void loop() {
   for (int len = 0; len < barLength; len++)
   {
-    for(int x = 1; x <= totalLED; x++)
+    for(int x = 0; x <= totalLED; x++)
     {
         if ( (x + len) % barLength != 0)
         {
