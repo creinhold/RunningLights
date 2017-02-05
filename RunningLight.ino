@@ -24,22 +24,30 @@ int numLED = 30;
 int totalLED = 60;
 int redLevel = 255;
 int greenLevel = 40;
-int blueLevel = 0; 
+int blueLevel = 0;
+int lightDelay = 100;
+int barLength = 5; 
 
 
 void loop() {
-
-  for(int x = 0; x <= totalLED; x++)
+  for (int len = 0; len < barLength; len++)
   {
-      strip.setPixelColor(x, greenLevel, redLevel, blueLevel);
-      strip.show();                    
-      delay(30);
-  }
-  for(int x = 0; x <= totalLED; x++)
-  {
-      strip.setPixelColor(x, 0, 0, 0);
-      strip.show();                     
-      delay(30);                        
+    for(int x = 1; x <= totalLED; x++)
+    {
+        if ( (x + len) % barLength != 0)
+        {
+        strip.setPixelColor(x, greenLevel, redLevel, blueLevel);
+  
+        }
+        else
+        {
+          strip.setPixelColor(x,0);
+        }
+  
+    }
+    strip.show();  
+  
+    delay (lightDelay);
   }
 
 }
