@@ -1,5 +1,7 @@
 // Code modified for Loveland Robotics
 // By Chris Reinhold
+// Version 1.0
+
 #include <Adafruit_DotStar.h>
 #include <SPI.h> 
 #define NUMPIXELS 60 // Number of LEDs in strip
