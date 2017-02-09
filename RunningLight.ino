@@ -1,6 +1,7 @@
 // Code modified for Loveland Robotics
 // By Chris Reinhold
 // Version 1.0
+// This used to drive cool lights for the robot
 
 #include <Adafruit_DotStar.h>
 #include <SPI.h> 
