@@ -2,6 +2,7 @@
 // By Chris Reinhold
 // Version 1.0
 // This used to drive cool lights for the robot
+// Cannot be used for competition robot
 
 #include <Adafruit_DotStar.h>
 #include <SPI.h> 
