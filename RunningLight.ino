@@ -1,4 +1,4 @@
-// Code modified for Loveland Robotics test
+// Code modified for Loveland Robotics test2
 // By Chris Reinhold
 // Version 1.0
 // This used to drive cool lights for the robot
